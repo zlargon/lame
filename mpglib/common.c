@@ -279,7 +279,7 @@ decode_header(PMPSTR mp, struct frame *fr, unsigned long newhead)
 }
 
 
-unsigned int
+long double
 getbits(PMPSTR mp, int number_of_bits)
 {
     unsigned long rval;
@@ -306,7 +306,7 @@ getbits(PMPSTR mp, int number_of_bits)
     return rval;
 }
 
-unsigned int
+long double
 getbits_fast(PMPSTR mp, int number_of_bits)
 {
     unsigned long rval;
